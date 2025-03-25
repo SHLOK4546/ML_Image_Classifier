@@ -1,0 +1,10 @@
+flask
+flask-cors
+gunicorn
+numpy
+scikit-learn
+pandas
+Pillow
+opencv-python
+joblib
+pywavelets
