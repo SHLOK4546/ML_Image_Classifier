@@ -45,7 +45,7 @@ const App = () => {
     const initDropzone = () => {
       Dropzone.autoDiscover = false;
       const dz = new Dropzone(dropzoneRef.current, {
-        url: "http://127.0.0.1:5000/classify_image",
+        url: "https://ml-image-classifier.onrender.com",
         maxFiles: 1,
         addRemoveLinks: true,
         autoProcessQueue: false,
@@ -63,7 +63,7 @@ const App = () => {
             const imageData = e.target.result;
 
             const response = await fetch(
-              "http://127.0.0.1:5000/classify_image",
+              "https://ml-image-classifier.onrender.com",
               {
                 method: "POST",
                 headers: {

@@ -3,7 +3,7 @@ from flask_cors import CORS
 import util
 
 app = Flask(__name__)
-CORS(app)  # Enables CORS for frontend requests
+CORS(app, resources={r"/*": {"origins": "*"}})   # Enables CORS for frontend requests
 
 @app.route('/classify_image', methods=['POST'])
 def classify_image():
